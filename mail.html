@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <title>大象</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body{display:flex;align-items:center;justify-content:center;height:100vh;margin:0;background:#f5f7fb}
+    svg{width:80vmin;height:auto}
+    .shadow{filter:blur(6px);opacity:.12}
+  </style>
+</head>
+<body>
+  <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="大象">
+    <defs>
+      <linearGradient id="skin" x1="0" x2="1">
+        <stop offset="0" stop-color="#9aa7b3"/>
+        <stop offset="1" stop-color="#878f98"/>
+      </linearGradient>
+    </defs>
+
+    <!-- shadow -->
+    <ellipse class="shadow" cx="400" cy="520" rx="220" ry="40" fill="#000"/>
+
+    <!-- body -->
+    <ellipse cx="420" cy="340" rx="220" ry="140" fill="url(#skin)"/>
+
+    <!-- head -->
+    <ellipse cx="240" cy="320" rx="110" ry="95" fill="url(#skin)"/>
+
+    <!-- trunk -->
+    <path d="M200 360 C180 380,170 420,200 440 C230 460,260 455,280 440 C300 425,290 405,280 400 C270 395,230 388,220 372"
+          fill="#7f8a91" stroke="#6e777d" stroke-width="2"/>
+
+    <!-- ear -->
+    <path d="M200 300 C120 220,150 380,240 330" fill="#8b98a2" stroke="#6e777d" stroke-width="2"/>
+
+    <!-- legs -->
+    <rect x="300" y="420" width="50" height="120" rx="12" fill="#8b98a2"/>
+    <rect x="400" y="420" width="50" height="120" rx="12" fill="#8b98a2"/>
+    <rect x="480" y="420" width="50" height="120" rx="12" fill="#8b98a2"/>
+    <rect x="540" y="420" width="50" height="120" rx="12" fill="#8b98a2"/>
+
+    <!-- tail -->
+    <path d="M630 370 C650 380,660 400,650 420" stroke="#6e777d" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+    <!-- eye -->
+    <circle cx="220" cy="300" r="10" fill="#fff"/>
+    <circle cx="222" cy="302" r="4" fill="#111"/>
+
+    <!-- tusks -->
+    <path d="M270 330 C300 330,310 345,290 350" fill="#fff"/>
+    <path d="M280 335 C310 335,320 350,300 355" fill="#fff"/>
+
+    <!-- smile -->
+    <path d="M240 350 C255 358,270 358,285 350" stroke="#6e777d" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </svg>
+</body>
+</html>
